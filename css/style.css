@@ -1,0 +1,62 @@
+/* RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+i{
+    color:white;
+}
+
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
+
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.row{
+    width:100%;
+
+}
+
+.column{
+    width:5%;
+}
+
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+}
+
+.flex-item{
+    position: relative;
+    height: 200px;
+    width: 300px;
+    background-image: url(https://via.placeholder.com/300x200);
+    margin: 5px;
+}
+
+.user-name{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5px;
+
+}
