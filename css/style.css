@@ -6,48 +6,50 @@
 }
 
 body{
-    background-color: black;
+    /* background-color: black; */
     font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    color: white;
+    font-size: 0.8em;
 }
 
 i{
     color:white;
 }
 
-.fl{
-    float: left;
-}
-
-.fr{
-    float: right;
-}
-
-.clearfix::after{
-    content: '';
-    display: table;
-    clear: both;
-}
-
 .row{
-    width:100%;
+    width: 100%;
+    height: calc(100% -140px);
 
 }
 
-.column{
+.column-5{
     width:5%;
+    height: 100%;
+   /* nope  line-height: 100%; */
 }
 
-.flex-container{
-    display: flex;
-    flex-flow: row wrap;
-    width: 90%;
+.column-90{
+    width: 89%;
+    height: 100%;
 }
 
-.flex-item{
+.button{
+    border: none;
+    color: white;
+    background-color: darkgrey;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.webcam-image{
     position: relative;
-    height: 200px;
-    width: 300px;
-    background-image: url(https://via.placeholder.com/300x200);
+    width: 250px;
+    height: 150px;
+    background-image: url(https://via.placeholder.com/250x150);
     margin: 5px;
 }
 
@@ -59,4 +61,95 @@ i{
     background-color: rgba(0, 0, 0, 0.3);
     padding: 5px;
 
+}
+
+.darkgrey-bg{
+    background-color: rgb(50, 50, 50);
+
+}
+
+.red-text{
+    color: crimson;
+}
+
+
+
+/* FLEX ATTRIBUTE */
+.flexrow{
+    display: flex;
+    flex-flow: row;
+}
+
+.flexcolumn{
+    display: flex;
+    flex-flow: column;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.justify-content-flexend{
+    justify-content: flex-end;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+/* ID ATTRIBUTES */
+#header-container{
+    padding: 15px 10px;
+    height: 55px;
+    background-color: crimson;
+}
+
+#main-container{
+    /* height: calc(100%-140px); */
+    background-color: cyan;
+}
+
+#footer-container{
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    height: 75px;
+    width:  100%;
+    /* background-color: rgb(25, 25, 25); */
+    background-color: darkgoldenrod;
+}
+
+##footer-container nav{
+    display: inline-block;
+    height: 75px;
+}
+
+#footer-container li{
+    display: inline-block;
+    /* margin: 5px; */
+}
+
+#footer-container li i{
+    font-size: 2.5em;
+    margin: 0 auto;
+}
+
+/* #footer-container button{
+    height: 100px;
+    width: 200px;
+    line-height: 100px;
+    border: none;
+} */
+
+#end-meeting-button{
+    height: 100%;
+    line-height: 75px;
 }
